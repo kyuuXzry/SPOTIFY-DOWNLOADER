@@ -1,0 +1,42 @@
+
+---
+
+### 3. `package.json`
+
+```json
+{
+  "name": "scrape-spotmate",
+  "version": "1.0.0",
+  "description": "Spotify downloader plugin for WhatsApp bot (spotmate.online)",
+  "main": "scrape-spotmate.js",
+  "exports": {
+    ".": {
+      "import": "./scrape-spotmate.js",
+      "require": "./scrape-spotmate.js"
+    }
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "scrape-spotmate.js"
+  ],
+  "peerDependencies": {
+    "@whiskeysockets/baileys": "*"
+  },
+  "dependencies": {
+    "axios": "^1.8.0",
+    "tough-cookie": "^5.0.0",
+    "axios-cookiejar-support": "^5.0.0"
+  },
+  "keywords": [
+    "whatsapp-bot",
+    "spotify-downloader",
+    "spotmate",
+    "baileys",
+    "plugin"
+  ],
+  "author": "Paduka Kyuu",
+  "license": "MIT"
+}
